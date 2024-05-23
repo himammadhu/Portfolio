@@ -1,0 +1,230 @@
+.certificates {
+    background-color: #000000;
+    color: #d4d3d3;
+    padding: 20px;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+
+    .ct {
+        text-decoration: underline;
+        font-family: 'Georgia', serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #515050;
+        font-size: 1rem;
+        margin-bottom: 20px;
+
+        &:hover {
+            color: #888;
+        }
+    }
+
+    .content {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 10%;
+
+        .certificate-section {
+            padding: 20px;
+            background: #1f1f1f;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2rem;
+            
+            
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            p {
+                margin: 0;
+                font-size: 1rem;
+                color: #aaa;
+            }
+
+            .section-title {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: #7b7a7a;
+                margin-bottom: 10px;
+            }
+
+            .certificate-title {
+                font-size: 1 rem;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .issuer {
+                font-style: italic;
+                color: #bbb;
+            }
+
+            .date {
+                font-size: 0.9rem;
+                color: #888;
+            }
+
+            &.ai {
+                
+                border-radius: 0 50px 0 50px;
+                border: 1px solid #3a3a3a;
+                background-color: #121212;
+
+                &:hover {
+                    background-color: #1f1f1f ;
+                }
+    
+                
+            }
+
+            &.workshop {
+                border-radius: 0 50px 0 50px;
+                border: 1px solid #3a3a3a;
+                margin-left: 35%;
+                background-color: #121212;
+
+                &:hover {
+                    background-color: #1f1f1f ;
+                }
+            }
+
+            &.iedc {
+                border-radius: 0 50px 0 50px;
+                border: 1px solid #3a3a3a;
+                background-color: #121212;
+
+                &:hover {
+                    background-color: #1f1f1f;
+                }
+    
+            }
+        }
+    }
+}
+//responsive
+
+@media (max-width: 768px) {
+
+  .certificates {
+    width: 33.5rem;
+    height: 75rem;
+
+    .ct {
+      margin-top: 2rem;
+       font-size: 15px;
+
+        &:hover {
+            color: #888;
+        }
+    }
+
+    .content {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 10%;
+
+        .certificate-section {
+            padding: 20px;
+            background: #1f1f1f;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 2rem;
+            
+            
+
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            }
+
+            p {
+                margin: 0;
+                font-size: .8rem;
+                color: #aaa;
+            }
+
+            .section-title {
+                font-size: 1rem;
+                font-weight: bold;
+                color: #7b7a7a;
+                margin-bottom: 10px;
+            }
+
+            .certificate-title {
+                font-size: .7rem;
+                font-weight: bold;
+                margin: 10px 0;
+            }
+
+            .issuer {
+                font-style: italic;
+                color: #bbb;
+            }
+
+            .date {
+                font-size: 0.5rem;
+                color: #888;
+            }
+
+            &.ai {
+                
+                border-radius: 0 50px 0 50px;
+                border: 1px solid #3a3a3a;
+                background-color: #121212;
+
+                &:hover {
+                    background-color: #1f1f1f ;
+                }
+    
+                
+            }
+
+            &.workshop {
+                border-radius: 0 50px 0 50px;
+                border: 1px solid #3a3a3a;
+                margin-left: 32%;
+                background-color: #121212;
+                margin-right: 5rem;
+
+                &:hover {
+                    background-color: #1f1f1f ;
+                }
+            }
+
+            &.iedc {
+                border-radius: 0 50px 0 50px;
+                border: 1px solid #3a3a3a;
+                background-color: #121212;
+
+                &:hover {
+                    background-color: #1f1f1f;
+                }
+    
+            }
+        }
+    }
+}
+
+
+    
+  }
+
+ 

@@ -1,0 +1,157 @@
+.abt-container {
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90dvh;
+    
+
+    .lft {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        .img {
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            opacity: 0.6;
+            border-radius: 50%;
+            border: 2px solid aliceblue;
+            transition: opacity 0.3s ease;
+            &:hover {
+                opacity: 1;
+            }
+            margin-top: 20%;
+        }
+    }
+
+    
+
+    .rgt {
+        width: 50%;
+        font-family: 'Arial', sans-serif;
+        color: #949494;
+        line-height: 1.6;
+        margin-top: 5rem;
+        overflow-y: auto;
+        height: 20rem;
+
+        &::-webkit-scrollbar {
+            width: 0.3rem; /* Adjust the width as desired */
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background-color: #727272;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 24px; /* Adjust font size for h3 */
+            font-weight: bold;
+            color: #b2b1b1;
+            margin-bottom: 15px;
+        }
+
+        h5 {
+            font-size: 18px;
+            font-weight: bold;
+            color: #b2b1b1;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .abt-container {
+      flex-direction: column;
+      padding: 10px; 
+      width: 35.3rem;
+      height: 75rem;
+      right: 0;
+  
+      .lft,
+      .rgt {
+        width: 100%;
+      }
+  
+      .lft {
+        .img {
+          width: 40%;
+          height: auto;
+          margin-top: 10%; /* Adjust margin for smaller screens */
+        }
+      }
+  
+      .rgt {
+        margin-top: 2rem;
+        height: auto;
+  
+        h1 {
+          font-size: 28px; /* Adjust font size for smaller screens */
+        }
+  
+        p {
+          font-size: 14px;
+        }
+  
+        h3 {
+          font-size: 20px;
+        }
+  
+        h5 {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .abt-container {
+      padding: 5px; /* Further adjust padding for the smallest screens */
+  
+      .lft {
+        .img {
+          width: 40%;
+          margin-top: -6rem;
+        }
+      }
+  
+      .rgt {
+        margin-top: 4rem;
+  
+        h1 {
+          font-size: 24px;
+        }
+  
+        p {
+          font-size: 12px;
+        }
+  
+        h3 {
+          font-size: 18px;
+        }
+  
+        h5 {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+

@@ -1,0 +1,196 @@
+.container {
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+
+  .home-left {
+    width: 50%;
+    position: relative;
+    padding-top: 10%;
+
+    &:hover {
+      color: rgb(124, 123, 123);
+    }
+  }
+
+
+
+
+  .name {
+    font-size: 45px;
+    font-weight: bold;
+    color: #cfcccc;
+    font-family: Georgia, serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    color: #918e8e;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+
+
+  }
+
+  .desp {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4d4c4c;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+
+  }
+
+
+  .contact {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+    background-color: #3b3a3a;
+    border-radius: 10px;
+    border: 1px solid whitesmoke;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+  }
+
+  .contact:hover {
+    cursor: pointer;
+    background-color: #adaaaa;
+
+  }
+
+  .contact p:hover {
+
+    color: #282727;
+
+  }
+
+
+
+  .contact p {
+    margin: 0;
+    color: #adaaaa;
+    font-family: cursive;
+
+  }
+
+
+  .home-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-right img {
+    max-width: 50rem;
+    max-height: 40rem;
+    opacity: 0.5;
+    margin-left: 8rem;
+
+  }
+
+
+
+
+
+}
+
+//responsive
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: row;
+    height: 25rem;
+  }
+
+  .home-left,
+  .homme-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 34.7rem;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+  }
+
+  .home-left{
+
+    .name {
+      font-size: 1.5rem;
+    }
+  
+    .title {
+      font-size: 1rem;
+    }
+  
+    .desp {
+      font-size: .8rem;
+      padding: 0 10px;
+    }
+
+  }
+  .home-right {
+    
+    padding-top: 5rem;
+    text-align: justify;
+  
+
+ 
+}
+
+  .home-right img {
+    width: 10rem;
+    height: 20rem;
+
+    
+  
+  }
+
+  .contact {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .desp {
+    font-size: .8rem;
+  }
+ .contact{
+  display: none;
+ }
+}
