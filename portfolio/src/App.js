@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter as Router
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import About from './Components/About/About';
 import Home from './Components/Home/Home';
@@ -12,15 +12,15 @@ import Skills from './Components/Skills/Skills';
 const App = () => {
   return (
     <div className='app'>
-      <Router> 
+      <Router basename="/Portfolio">
         <Navbar />
         <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Project" element={<Project />} />
-        <Route path="/Skills" element={<Skills />} />
-        <Route path="/Certificates" element={<Certificates />} />
-        <Route path="/Contact" element={<Contact />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Project" element={<Project />} />
+          <Route path="/Skills" element={<Skills />} />
+          <Route path="/Certificates" element={<Certificates />} />
+          <Route path="/Contact" element={<Contact />} />
         </Routes>
       </Router>
     </div>
@@ -28,4 +28,3 @@ const App = () => {
 };
 
 export default App;
-
